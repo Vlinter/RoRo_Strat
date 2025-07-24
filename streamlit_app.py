@@ -230,7 +230,7 @@ if optim:
 # ── TABLEAUX ────────────────────────────────────────────────────────────────
 if 'Performance Metrics' in sel_tables:
     mets = pd.DataFrame({
-        'RoRo (20-40-80)': compute_metrics(df['strat_ret_nav'], df['strat_ret'], df['w_prec'], df['date']),
+        'RoRo': compute_metrics(df['strat_ret_nav'], df['strat_ret'], df['w_prec'], df['date']),
         'Statique 40/60' : compute_metrics(df['ws_ret_nav'],    df['ws_ret'],  pd.Series(0.40,index=df.index), df['date']),
         'Précieux 100%'  : compute_metrics(df['prec_ret_nav'],  df['prec_ret'],pd.Series(1.0, index=df.index), df['date']),
         'Industriel 100%': compute_metrics(df['ind_ret_nav'],   df['ind_ret'], pd.Series(0.0, index=df.index), df['date'])
