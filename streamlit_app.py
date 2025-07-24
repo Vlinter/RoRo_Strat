@@ -98,9 +98,9 @@ use_roll    = st.sidebar.checkbox('Use rolling window')
 rolling_win = st.sidebar.number_input('Rolling window (jours)', 1, 2000, 756) if use_roll else None
 p_low       = st.sidebar.slider('P bas (P10)',  0.0, 0.5, 0.10)
 p_high      = st.sidebar.slider('P haut (P80)', 0.5, 1.0, 0.80)
-w_min       = st.sidebar.slider('Poids min', 0.0, 1.0, 0.20)
+w_min       = st.sidebar.slider('Poids min', 0.0, 1.0, 0.25)
 w_mid       = st.sidebar.slider('Poids mid', 0.0, 1.0, 0.40)
-w_max       = st.sidebar.slider('Poids max', 0.0, 1.0, 0.80)
+w_max       = st.sidebar.slider('Poids max', 0.0, 1.0, 0.60)
 
 # Options de graphiques et tableaux
 graph_opts = [
